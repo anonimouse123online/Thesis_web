@@ -1,0 +1,142 @@
+
+.login-container {
+    min-height: 30vh;
+    background-color: #eff6ff; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.login-card {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    max-width: 400px;
+    padding: 2rem;
+}
+
+.icon-header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.icon-circle {
+    background-color: #000;
+    padding: 1rem;
+    border-radius: 9999px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.login-title h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #111827;
+    margin: 0;
+}
+
+.login-title p {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-top: 0.25rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 0.5rem;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+    left: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #9ca3af;
+}
+
+.login-input {
+    width: 100%;
+    background-color: #f9fafb;
+    border: 1px solid #f3f4f6;
+    border-radius: 0.5rem;
+    padding: 0.75rem 0.75rem 0.75rem 2.5rem;
+    outline: none;
+    color: #000;
+}
+
+.login-input:focus {
+    box-shadow: 0 0 0 2px #000;
+}
+
+.btn-signin {
+    width: 100%;
+    background-color: #000;
+    color: white;
+    font-weight: 700;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn-signin:hover {
+    background-color: #1f2937;
+}
+
+.divider {
+    border: 0;
+    border-top: 1px solid #f3f4f6;
+    margin: 2rem 0 1.5rem 0;
+}
+
+.signup-section {
+    text-align: center;
+}
+
+.signup-text {
+    font-size: 0.875rem;
+    color: #9ca3af;
+    margin-bottom: 1rem;
+}
+
+.btn-create {
+    width: 100%;
+    background: transparent;
+    border: 1px solid #e5e7eb;
+    color: #111827;
+    font-weight: 700;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.demo-box {
+    margin-top: 1.5rem;
+    background-color: #f3f4f6;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.75rem;
+    color: #6b7280;
+}

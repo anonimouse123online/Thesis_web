@@ -1,44 +1,26 @@
 :root {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  
-  /* Use the white background from your screenshot */
   background-color: #ffffff;
   color: #000000;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
   margin: 0;
-  /* Remove flex centering to allow full width */
-  display: block; 
-  min-width: 100vw;
-  min-height: 100vh;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#root {
-  /* Ensure the React container fills the screen */
-  width: 100%;
-  min-height: 100vh;
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
-/* Reset your buttons to match the professional dashboard look */
+/* Reset buttons globally so they don't have default gray borders */
 button {
-  border-radius: 8px;
-  border: 1px solid #e5e7eb;
-  padding: 0.6em 1.2em;
-  font-size: 14px;
-  font-weight: 500;
-  background-color: #ffffff;
+  all: unset;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-button:hover {
-  background-color: #f9fafb;
+  font-family: inherit;
 }
