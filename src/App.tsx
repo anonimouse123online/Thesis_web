@@ -12,16 +12,22 @@ const App: React.FC = () => {
   return (
     <Router>
       <Routes>
+        {/* Login */}
         <Route path="/" element={<LoginPage />} />
 
+        {/* Dashboard Layout */}
         <Route path="/dashboard" element={<Layout />}>
-          <Route index element={<Navigate to="/dashboard/projects" replace />} />
+          {/* Default redirect */}
+          <Route index element={<Navigate to="projects" replace />} />
+
+          {/* Nested routes */}
           <Route path="projects" element={<Projects />} />
           <Route path="documents" element={<Documents />} />
           <Route path="tasks" element={<Tasks />} />
-          <Route path="ContractorView" element={<ContractorView />} />
+          <Route path="contractor-view" element={<ContractorView />} />
         </Route>
 
+        {/* Fallback */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Router>
